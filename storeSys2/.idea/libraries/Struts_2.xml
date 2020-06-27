@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="Struts 2" type="struts2">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/struts-2.5.20/lib/commons-fileupload-1.4.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/struts-2.5.20/lib/commons-io-2.6.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/struts-2.5.20/lib/commons-lang3-3.8.1.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/struts-2.5.20/lib/freemarker-2.3.28.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/struts-2.5.20/lib/javassist-3.20.0-GA.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/struts-2.5.20/lib/log4j-api-2.11.1.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/struts-2.5.20/lib/ognl-3.1.21.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/struts-2.5.20/lib/struts2-core-2.5.20.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/myjar/mysql-connector-java-5.1.7-bin (1).jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/myjar/mysql-connector-java-8.0.9-rc (1).jar!/" />
+      <root url="jar://F:/apache-tomcat-8.0.20/lib/servlet-api.jar!/" />
+      <root url="jar://F:/apache-tomcat-8.0.20/lib/el-api.jar!/" />
+      <root url="file://F:/apache-tomcat-8.0.20" />
+      <root url="jar://F:/apache-tomcat-8.0.20/lib/jsp-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://F:/apache-tomcat-8.0.20/webapps/docs/appdev/sample/src" />
+      <root url="file://F:/apache-tomcat-8.0.20/webapps/examples/WEB-INF/classes" />
+      <root url="file://F:/apache-tomcat-8.0.20/webapps/examples/WEB-INF/jsp/applet" />
+      <root url="file://F:/apache-tomcat-8.0.20/webapps/examples/jsp/plugin/applet" />
+      <root url="file://F:/apache-tomcat-8.0.20/work/Catalina/localhost/ROOT" />
+    </SOURCES>
+  </library>
+</component>
