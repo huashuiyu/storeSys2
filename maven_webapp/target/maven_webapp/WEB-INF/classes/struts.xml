@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!--<constant name="struts.devMode" value="true"/>
+    <constant name="struts.multipart.maxSize" value="2097152"/>
+    <interceptors>
+            <interceptor-stack name="myStack">
+                <interceptor-ref name="fileUpload"
+                    <param name="allowedTypes">image/x-png,image/bmp,image/gif,image/jpeg,image/jpg</param>
+                    <param name="maximumSize">655360</param>
+                </interceptor-ref>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>-->
+    <constant name="struts.devMode" value="true"/>
+    <package name="defalut" namespace="/" extends="struts-default">
+        <action name="login" class="action.LoginAction" method="execute">
+            <result name="success">/welcome.jsp</result>
+            <result name="error">/index.jsp</result>
+        </action>
+        <action name="toadd" >
+            <result>/addMsg.jsp</result>
+        </action>
+        <action name="add" class="action.LoginAction" method="add">
+            <result name="success">/welcome.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="delete" class="action.LoginAction" method="delete">
+            <result name="success">/welcome.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="toupdate" class="action.LoginAction" method="toupdate">
+            <result name="success">/update.jsp</result>
+        </action>
+        <action name="update" class="action.LoginAction" method="update">
+            <result name="success">/welcome.jsp</result>
+        </action>
+        <action name="selectLike" class="action.LoginAction" method="selectLike">
+            <result name="success">/welcome.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <!--<action name="upload" class="file.UploadAction">
+            <interceptor-ref name="myStack"/>
+            <result>/success.jsp</result>
+            <result name="input">/selectfile.jsp</result>
+        </action>
+        <action name="validate1" class="input.ValidateInValidate">
+            <result name="input">/register.jsp</result>
+            <result name="success" type="chain">login</result>
+        </action>
+
+
+        <action name="login" class="action.LoginAction">
+            <result name="error">/index.jsp</result>
+            <result name="success" type="chain">bookQuery</result>
+        </action>
+        <action name="bookQuery" class="action.BookAction">
+            <result name="success">/welcome.jsp</result>
+        </action>-->
+    </package>
+</struts>

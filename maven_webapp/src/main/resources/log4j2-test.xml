@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+<Appenders>
+    <!-- 控制台打印 -->
+    <Console name="CONSOLE" target="SYSTEM_OUT">
+        <PatternLayout pattern="%d %-5p [%t] (%F:%L) - %m%n"/>
+        <Filters>
+            ~~~
+        </Filters>
+    </Console>
+
+    <!-- 按天每天备份一个日志 -->
+    <RollingFile name="ManageWebInfo" fileName="d:\logs\log4j2study_info.log"
+                 filePattern="d:\logs\log4j2study_info_%d{yyyy-MM-dd}_%i.log.gz">
+        。。。
+    </RollingFile>
+
+    <RollingFile name="ManageWebError" fileName="d:\logs\log4j2study_error.log"
+                 filePattern="d:\logs\log4j2study_error_%d{yyyy-MM-dd}_%i.log.gz">
+        。。。
+    </RollingFile>
+</Appenders>
+
+<Loggers>
+    <Root level="WARN">
+        <AppenderRef ref="CONSOLE"/>
+        <AppenderRef ref="ManageWebInfo"/>
+        <AppenderRef ref="ManageWebError"/>
+    </Root>
+    <Logger name="study" level="WARN">
+        <AppenderRef ref="CONSOLE"/>
+    </Logger>
+</Loggers>
+</Configuration>
